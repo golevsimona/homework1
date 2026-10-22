@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Control panel</title>
+</head>
+<body>
+    <header>
+    <h1 align="center"> Welcome to the control panel of your new smart home!</h1>
+    <hr>
+    </header>
+
+    <nav>
+    <p>
+        You have four rooms you can check. 
+        <br>
+        They are:
+        <ul> 
+            <li>
+                <a href="#bedroom">The bedroom</a>
+            </li>
+            <br>
+            <li>
+                <a href="#livingroom">The living room</a>
+            </li>
+            <br>
+            <li>
+                <a href="#kitchen">The kitchen</a>
+            </li> 
+            <br>
+            <li>
+                <a href="#garden">The garden</a>
+            </li> 
+        </ul>
+        <br>
+        It's also possible to navigate to the notifications section with the following link         
+        <a href="#notifications">Notifications section</a>
+    </p>
+    </nav>
+
+    <br>
+    <hr>
+    <br>
+
+    <section id="bedroom">
+        <h2>The Bedroom!</h2>
+        <h3>Sensors inside the bedroom:</h3>
+        <p>
+            Required zones: Temperature zone (20&deg;C-24&deg;C), humidity (30%-50%), CO<sub>2</sub> range (&lt;1000ppm) 
+        </p>
+        <article>
+            <h4>Temperature sensor:</h4>
+            <p>
+                Reading: <output>21</output>&deg;C <input type="checkbox" checked disabled>
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="85">85%</meter>
+            </p>
+        </article>
+        <article>
+            <h4>Humidity sensor: </h4>
+            <p>
+                Reading: <output>32%</output> <input type="checkbox" checked disabled>
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="24">24%</meter>
+            </p>
+        </article>
+        <article>
+            <h4>CO<sub>2</sub> sensor: </h4>
+            <p>
+                Reading: <input type="range" min="400" max="2000" value="560" disabled> 560 ppm
+                <br>
+                Status: <input type="checkbox" checked disabled> 
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="8">8%</meter>
+            </p>
+        </article>
+    </section>
+    <br>
+    <section id="livingroom">
+        <h2>The Living Room!</h2>
+        <h3>Sensors inside the living room:</h3>
+        <p>
+            Required zones: Temperature zone (20&deg;C-24&deg;C), light zone (30%-50%), CO<sub>2</sub> range (&lt;1000ppm) 
+        </p>
+        <article>
+            <h4>Temperature sensor:</h4>
+            <p>
+                Reading: <output>23</output>&deg;C <input type="checkbox" checked disabled>
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="80">80%</meter>
+            </p>
+        </article>
+        <article>
+            <h4>Light sensor: </h4>
+            <p>
+                Reading: 
+                <select disabled>
+                    <option>Dark</option>
+                    <option>Dim</option>
+                    <option selected>Bright</option>
+                </select>
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="24">24%</meter>
+            </p>
+        </article>
+        <article>
+            <h4>Balcony door lock sensor: </h4>
+            <p>
+                Reading: 
+                <input type="radio" id="liv-door-locked" name="liv-door" checked disabled> <label for="liv-door-locked">Locked</label>
+                <input type="radio" id="liv-door-unlocked" name="liv-door" disabled> <label for="liv-door-unlocked">Unlocked</label>
+                <br>
+                Status: 
+                <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="55">55%</meter>
+            </p>
+        </article>
+    </section>
+    <br>
+    <section id="kitchen">
+        <h2>The Kitchen!</h2>
+        <h3>Sensors inside the kitchen:</h3>
+        <p>
+            Required zones: Smoke detector (Clear or Not Clear), fridge door (&lt;3mins), water pressure (1-3bar)
+        </p>
+        <article>
+            <h4>Smoke detector:</h4>
+            <p>
+                Reading: <input type="text" value="Clear" readonly>
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="65">65%</meter>
+            </p>
+        </article>
+        <article>
+            <h4>Fridge door sensor: </h4>
+            <p>
+                Reading: <mark>Open for 2 min</mark>
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="36">36%</meter>
+            </p>
+        </article>
+        <article>
+            <h4>Water pressure:</h4>
+            <p>
+                <table>
+                    <tr>
+                        <th>Reading:</th>
+                        <td>2.4 bar</td>
+                    </tr>
+                </table>
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="71">71%</meter>
+            </p>
+        </article>
+    </section>
+    <br>
+    <section id="garden">
+        <h2>The Garden!</h2>
+        <h3>Sensors inside the garden:</h3>
+        <p>
+            Required zones: Soil moisture (40-70%), UV index(&lt;8), last watering (within the last 24h) 
+        </p>
+        <article>
+            <h4>Soil moisture:</h4>
+            <p>
+                Reading: <meter min="0" max="100" low="30" high="70" optimum="50" value="15">15%</meter> 15% <em>(out of range)</em>
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="10">10%</meter>
+            </p>
+        </article>
+        <article>
+            <h4>UV sensor: </h4>
+            <p>
+                Reading: <data value="6">6</data> (UV index)
+                <br>
+                Status: <input type="checkbox" checked disabled>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="33">33%</meter>
+            </p>
+        </article>
+        <article>
+            <h4>Water system sensor: </h4>
+            <p>
+                Last watered: <time datetime="2026-10-14">14 Oct 2026</time>
+                <br>
+                Status: <input type="checkbox" id="bed-temp-status" checked disabled> <label for="bed-temp-status">ON</label>
+                <br>
+                Battery: <meter min="0" max="100" low="20" high="80" optimum="100" value="77">77%</meter>
+            </p>
+        </article>
+    </section>
+    <hr>
+    <br>
+    <section id="notifications">
+    <h2>Notifications</h2>
+    <p>Click a notification to see the details.</p>
+    <article>
+        <details>
+            <summary>Garden: soil moisture is <em>out of range</em></summary>
+            <p>Soil moisture is 15%, but the allowed zone is 30-70%.</p>
+        </details>
+    </article>
+
+    <article>
+        <details>
+            <summary>Bedroom: CO2 sensor battery is <em>low</em></summary>
+            <p>Battery is at 8%. Replace it soon.</p>
+        </details>
+    </article>
+
+    <article>
+        <details>
+            <summary>Garden: soil moisture sensor battery is <em>low</em></summary>
+            <p>Battery is at 10%. Replace it soon.</p>
+        </details>
+    </article>
+</section>
+
+</body>
+</html>
