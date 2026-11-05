@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formula 1 Race</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Formula 1 ~Live~</h1>
+    <div id="lapInfo">Lap 0 / 10</div>
+    <div id="banner"></div>
+  </header>
+
+  <section>
+    <h2>Drivers ~start~</h2>
+    <table id="driversTable">
+      <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Team</th>
+            <th>Base speed</th>
+            <th>Base skill</th>
+            <th>Starting tyres</th>
+            </tr>
+        </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <div>
+    <section>
+      <h2 id="startTitle">Status at start of lap</h2>
+      <table id="startTable"></table>
+    </section>
+
+    <section>
+      <h2 id="endTitle">Status at end of lap</h2>
+      <table id="endTable"></table>
+    </section>
+  </div>
+
+  <section>
+    <h2>Race events</h2>
+    <ul id="log"></ul>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
