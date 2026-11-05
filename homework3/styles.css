@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+body { 
+    font-family: Arial, sans-serif; 
+    background: #06063e; 
+    color: #6c6c6c; 
+    margin: 0; 
+    padding: 16px; 
+}
+header { 
+    text-align: center; 
+}
+h1 { 
+    color: #466fac; 
+    margin: 0 0 4px; 
+}
+h2 { 
+    font-size: 1.1rem; 
+    border-left: 4px solid #5b1a9c; 
+    padding-left: 8px; 
+}
+#lapInfo { 
+    font-size: 1.3rem; 
+    font-weight: bold; 
+}
+#banner { 
+    min-height: 28px; 
+    margin: 6px 0; 
+    font-weight: bold; 
+    color: gold; 
+}
+section { 
+    background: #1f1f2b; 
+    border-radius: 8px; 
+    padding: 12px; 
+    margin: 12px auto; 
+    max-width: 1200px; 
+}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: 0.9rem; 
+}
+th, td { 
+    padding: 6px 8px; 
+    text-align: left; 
+    border-bottom: 1px solid #324c63; 
+}
+th { 
+    background: #3b3b60; 
+}
+.soft { 
+    color: #4dd3ff; 
+    font-weight: bold; 
+}
+.hard { 
+    color: #8123c4; 
+    font-weight: bold; 
+}
+.st-pit { 
+    color: #4da6ff; 
+}
+.st-spin { 
+    color: #ffa500; 
+}
+.st-off { 
+    color: #ff5555; 
+}
+.st-sc { 
+    color: #ffd400; 
+}
+.winner { 
+    background: #524801; 
+    color: gold; 
+    font-weight: bold; 
+}
+#log { 
+    max-height: 220px; 
+    overflow-y: auto; 
+    padding-left: 18px; 
+}
